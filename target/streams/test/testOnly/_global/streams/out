@@ -1,0 +1,32 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(CPUTopTester, org.scalatest.tools.Framework$$anon$1@5ccf116f, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mCPUTopTester:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mCPUTopTester[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should pass *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  firrtl.passes.PassExceptions: firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 24:26] : [module CPUTop]  Reference dataMemory is not fully initialized.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m   : dataMemory.io.dataWrite <= VOID[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 25:29] : [module CPUTop]  Reference programMemory is not fully initialized.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m   : programMemory.io.address <= VOID[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 23:30] : [module CPUTop]  Reference programCounter is not fully initialized.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m   : programCounter.io.jump <= VOID[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 23:30] : [module CPUTop]  Reference programCounter is not fully initialized.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m   : programCounter.io.stop <= VOID[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 5:14] : [module CPUTop]  Reference io is not fully initialized.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m   : io.done <= VOID[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 24:26] : [module CPUTop]  Reference dataMemory is not fully initialized.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m   : dataMemory.io.address <= VOID[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 23:30] : [module CPUTop]  Reference programCounter is not fully initialized.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m   : programCounter.io.programCounterJump <= VOID[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 23:30] : [module CPUTop]  Reference programCounter is not fully initialized.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m   : programCounter.io.run <= VOID[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 24:26] : [module CPUTop]  Reference dataMemory is not fully initialized.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m   : dataMemory.io.writeEnable <= VOID[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mfirrtl.passes.PassException: 9 errors detected![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 932 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 0, failed 1, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 TEST FAILED ***[0m[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	CPUTopTester[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtestOnly[0m) sbt.TestsFailedException: Tests unsuccessful[0m

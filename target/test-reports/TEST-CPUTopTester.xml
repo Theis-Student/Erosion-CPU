@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite hostname="mac.students.clients.local" name="CPUTopTester" tests="1" errors="0" failures="1" skipped="0" time="0.81" timestamp="2026-10-07T14:42:53">
+          <properties>
+      <property name="java.specification.version" value="17"/><property name="sun.jnu.encoding" value="UTF-8"/><property name="sun.arch.data.model" value="64"/><property name="java.vendor.url" value="https://adoptium.net/"/><property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/lib"/><property name="sun.java.command" value="/opt/homebrew/Cellar/sbt/2.0.10/libexec/bin/sbt-launch.jar testOnly CPUTopTester"/><property name="jdk.debug" value="release"/><property name="sun.stderr.encoding" value="UTF-8"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="java.version.date" value="2026-08-18"/><property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home"/><property name="file.separator" value="/"/><property name="java.vm.compressedOopsMode" value="Zero based"/><property name="line.separator" value="
+"/><property name="sun.stdout.encoding" value="UTF-8"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="java.specification.name" value="Java Platform API Specification"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="java.runtime.version" value="17.0.20.1+1"/><property name="user.name" value="theiskongsted"/><property name="log4j.ignoreTCL" value="true"/><property name="file.encoding" value="UTF-8"/><property name="java.vendor.version" value="Temurin-17.0.20.1+1"/><property name="java.io.tmpdir" value="/var/folders/bk/pvgh3x7x157g_v970xy0sdwc0000gn/T/"/><property name="java.version" value="17.0.20.1"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="native.encoding" value="UTF-8"/><property name="java.library.path" value="/Users/theiskongsted/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/><property name="java.vendor" value="Eclipse Adoptium"/><property name="java.specification.maintenance.version" value="1"/><property name="scala.ext.dirs" value="/Users/theiskongsted/.sbt/1.0/java9-rt-ext-eclipse_adoptium_17_0_20_1"/><property name="sun.io.unicode.encoding" value="UnicodeBig"/><property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="java.class.path" value="/opt/homebrew/Cellar/sbt/2.0.10/libexec/bin/sbt-launch.jar"/><property name="java.vm.vendor" value="Eclipse Adoptium"/><property name="jline.shutdownhook" value="false"/><property name="user.timezone" value="Europe/Copenhagen"/><property name="java.vm.specification.version" value="17"/><property name="os.name" value="Mac OS X"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="user.country" value="DK"/><property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="sun.cpu.endian" value="little"/><property name="user.home" value="/Users/theiskongsted"/><property name="user.language" value="en"/><property name="sbt.script" value="/opt/homebrew/Cellar/sbt/2.0.10/libexec/bin/sbt"/><property name="sbt.ipcsocket.tmpdir" value="/var/folders/bk/pvgh3x7x157g_v970xy0sdwc0000gn/T/.sbtf42fa871/ipcsocket"/><property name="swoval.tmpdir" value="/var/folders/bk/pvgh3x7x157g_v970xy0sdwc0000gn/T/.sbtf42fa871/swoval"/><property name="jline.esc.timeout" value="0"/><property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="path.separator" value=":"/><property name="os.version" value="15.3"/><property name="jna.nosys" value="true"/><property name="java.runtime.name" value="OpenJDK Runtime Environment"/><property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/><property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/><property name="user.dir" value="/Users/theiskongsted/Documents/Erosion-CPU"/><property name="os.arch" value="aarch64"/><property name="java.vm.info" value="mixed mode, sharing"/><property name="java.vm.version" value="17.0.20.1+1"/><property name="java.class.version" value="61.0"/>
+    </properties>
+          <testcase classname="CPUTopTester" name=" should pass" time="0.81">
+                      <failure message="
+firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 24:26] : [module CPUTop]  Reference dataMemory is not fully initialized.
+   : dataMemory.io.dataWrite &lt;= VOID
+firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 25:29] : [module CPUTop]  Reference programMemory is not fully initialized.
+   : programMemory.io.address &lt;= VOID
+firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 23:30] : [module CPUTop]  Reference programCounter is not fully initialized.
+   : programCounter.io.jump &lt;= VOID
+firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 23:30] : [module CPUTop]  Reference programCounter is not fully initialized.
+   : programCounter.io.stop &lt;= VOID
+firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 5:14] : [module CPUTop]  Reference io is not fully initialized.
+   : io.done &lt;= VOID
+firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 24:26] : [module CPUTop]  Reference dataMemory is not fully initialized.
+   : dataMemory.io.address &lt;= VOID
+firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 23:30] : [module CPUTop]  Reference programCounter is not fully initialized.
+   : programCounter.io.programCounterJump &lt;= VOID
+firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 23:30] : [module CPUTop]  Reference programCounter is not fully initialized.
+   : programCounter.io.run &lt;= VOID
+firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 24:26] : [module CPUTop]  Reference dataMemory is not fully initialized.
+   : dataMemory.io.writeEnable &lt;= VOID
+firrtl.passes.PassException: 9 errors detected!" type="firrtl.passes.PassExceptions">firrtl.passes.PassExceptions: 
+firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 24:26] : [module CPUTop]  Reference dataMemory is not fully initialized.
+   : dataMemory.io.dataWrite &lt;= VOID
+firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 25:29] : [module CPUTop]  Reference programMemory is not fully initialized.
+   : programMemory.io.address &lt;= VOID
+firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 23:30] : [module CPUTop]  Reference programCounter is not fully initialized.
+   : programCounter.io.jump &lt;= VOID
+firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 23:30] : [module CPUTop]  Reference programCounter is not fully initialized.
+   : programCounter.io.stop &lt;= VOID
+firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 5:14] : [module CPUTop]  Reference io is not fully initialized.
+   : io.done &lt;= VOID
+firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 24:26] : [module CPUTop]  Reference dataMemory is not fully initialized.
+   : dataMemory.io.address &lt;= VOID
+firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 23:30] : [module CPUTop]  Reference programCounter is not fully initialized.
+   : programCounter.io.programCounterJump &lt;= VOID
+firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 23:30] : [module CPUTop]  Reference programCounter is not fully initialized.
+   : programCounter.io.run &lt;= VOID
+firrtl.passes.CheckInitialization$RefNotInitializedException:  @[src/main/scala/CPUTop.scala 24:26] : [module CPUTop]  Reference dataMemory is not fully initialized.
+   : dataMemory.io.writeEnable &lt;= VOID
+firrtl.passes.PassException: 9 errors detected!
+</failure>
+                    </testcase>
+          <system-out><![CDATA[]]></system-out>
+          <system-err><![CDATA[]]></system-err>
+        </testsuite>
