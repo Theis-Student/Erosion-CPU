@@ -19,7 +19,7 @@ class ProgramCounter extends Module {
 } .elsewhen(io.stop === true.B && io.jump === false.B){
     io.programCounter := io.programCounter
   }.elsewhen(io.run === true.B && io.stop === false.B && io.jump === false.B){
-    io.programCounter := io.programCounter + 1.U
+    io.programCounter := io.programCounter
     cntReg := cntReg + 1.U
   }. otherwise(io.run === true.B && io.stop === false.B && io.jump === true.B)
     io.programCounter := io.programCounterJump
